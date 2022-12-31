@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d8079807e54114d88424a853db683f, type: 3}
+  m_Name: Dialog Data CN
+  m_EditorClassIdentifier: 
+  chatNodes:
+  - id: cn1
+    name: "\u975E\u73A9\u5BB6\u89D2\u8272"
+    sprite: {fileID: 21300000, guid: 75eae521d68de5841ac8bf6858747cfa, type: 3}
+    content: "\u4F60\u597D\u5440 \u6B22\u8FCE\u6765\u5230\u5C0F\u5C0F\u82F1\u96C4
+      \u51C6\u5907\u597D\u5F00\u59CB\u5192\u9669\u4E86\u5417?\t"
+    decisionNodes:
+    - text: "\u8FD8\u6CA1\u6709 \u6211\u8981\u518D\u60F3\u60F3"
+      targetId: 
+    - text: "\u51C6\u5907\u597D\u4E86!"
+      targetId: cn2
+  - id: cn2
+    name: "\u975E\u73A9\u5BB6\u89D2\u8272"
+    sprite: {fileID: 21300000, guid: 75eae521d68de5841ac8bf6858747cfa, type: 3}
+    content: "\u597D\u7684 \u5728\u5F00\u59CB\u524D\u8BF7\u8BA9\u6211\u4ECB\u7ECD\u4E0B\u8FD9\u6B3E\u6E38\u620F"
+    decisionNodes:
+    - text: "\u4E0D\u7528\u4E86"
+      targetId: 
+    - text: "\u597D\u7684"
+      targetId: cn3
+  - id: cn3
+    name: "\u975E\u73A9\u5BB6\u89D2\u8272"
+    sprite: {fileID: 21300000, guid: 75eae521d68de5841ac8bf6858747cfa, type: 3}
+    content: "\u8FD9\u662F\u4E00\u6B3ERPG\u6E38\u620F \u4F60\u53EF\u4EE5\u7528\u9F20\u6807\u63A7\u5236\u73A9\u5BB6\u79FB\u52A8
+      \u70B9\u51FB\u9F20\u6807\u5DE6\u952E\u8FDB\u884C\u653B\u51FB \u4F60\u4F1A\u9047\u5230\u4E0D\u540C\u7C7B\u578B\u7684\u602A\u7269
+      \u53EF\u4EE5\u5229\u7528\u4F20\u9001\u95E8(\u6309E)\u8131\u79BB\u6218\u6597
+      \u6700\u540E\u4F60\u5C06\u4F1A\u9762\u5BF9\u77F3\u5934\u4EBABOSS "
+    decisionNodes:
+    - text: "\u597D\u7684 \u8C22\u8C22"
+      targetId: 
+    - text: "\u54C8\u54C8 \u771F\u662F\u6B3E\u6709\u8DA3\u7684\u6E38\u620F\u5462!"
+      targetId: cn4
+  - id: cn4
+    name: "\u975E\u73A9\u5BB6\u89D2\u8272"
+    sprite: {fileID: 21300000, guid: 75eae521d68de5841ac8bf6858747cfa, type: 3}
+    content: "\u54E6 \u5BF9\u4E86 \u5FD8\u8BB0\u544A\u8BC9\u4F60\u4E86 \u6740\u6B7B\u602A\u7269\u4F1A\u5347\u7EA7
+      \u4F60\u7684\u5C5E\u6027\u4F1A\u6709\u6240\u63D0\u9AD8"
+    decisionNodes: []
+  - id: cn5
+    name: "\u975E\u73A9\u5BB6\u89D2\u8272"
+    sprite: {fileID: 21300000, guid: 75eae521d68de5841ac8bf6858747cfa, type: 3}
+    content: " \u5E0C\u671B\u4F60\u73A9\u7684\u6109\u5FEB QAQ"
+    decisionNodes:
+    - text: "\u8C22\u8C22! \u4E0B\u6B21\u89C1!"
+      targetId: 

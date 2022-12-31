@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d8079807e54114d88424a853db683f, type: 3}
+  m_Name: Dialog Data EN
+  m_EditorClassIdentifier: 
+  chatNodes:
+  - id: en1
+    name: NPC
+    sprite: {fileID: 21300000, guid: 75eae521d68de5841ac8bf6858747cfa, type: 3}
+    content: "\rHello. Welcome to the Tiny Hero. Are you ready to start the adventure?"
+    decisionNodes:
+    - text: 'Not yet. '
+      targetId: 
+    - text: 'I am ready! '
+      targetId: en2
+  - id: en2
+    name: NPC
+    sprite: {fileID: 21300000, guid: 75eae521d68de5841ac8bf6858747cfa, type: 3}
+    content: Alright. Let me introduce  the game before you start.
+    decisionNodes:
+    - text: LEAVE ME ALONE!
+      targetId: 
+    - text: Sure
+      targetId: en3
+  - id: en3
+    name: NPC
+    sprite: {fileID: 21300000, guid: 75eae521d68de5841ac8bf6858747cfa, type: 3}
+    content: This is a RPG game. You can use your mouse to controll the hero. Left
+      click mouse to attack enemy. You will encounter different type of monsters.
+      But you can use port to run away (Press E when getting close) when you find
+      they are too strong. Finally, you will fight with rock boss.
+    decisionNodes:
+    - text: Cool. Thanks!
+      targetId: 
+    - text: 'What an interesting game! '
+      targetId: en4
+  - id: en4
+    name: NPC
+    sprite: {fileID: 21300000, guid: 75eae521d68de5841ac8bf6858747cfa, type: 3}
+    content: Wait a second. I almost forget to tell you something. You will level
+      up when killing monsters. Your ability will be improved when level up.
+    decisionNodes: []
+  - id: en5
+    name: NPC
+    sprite: {fileID: 21300000, guid: 75eae521d68de5841ac8bf6858747cfa, type: 3}
+    content: Hope you enjoy the game QAQ
+    decisionNodes:
+    - text: Thanks!  See you next time!
+      targetId: 
